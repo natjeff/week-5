@@ -6,13 +6,12 @@ from apputil import *
 df = pd.read_csv('https://raw.githubusercontent.com/leontoddjohnson/datasets/main/data/titanic.csv')
 
 
-
+# Question for part 6 of exercise 1
 st.write("Did children in third class have lower survival rates compared to children in higher classes?")
 '''
 # Titanic Visualization 1
-
 '''
-)
+
 # Generate and display the figure
 def visualize_demographic(results: pd.DataFrame):
     """
@@ -42,15 +41,16 @@ fig1 = visualize_demographic(results)
 st.plotly_chart(fig1, use_container_width=True)
 
 
+# Answer to part 4 from exercise 2
+st.write("As far as I can tell the last names result does seem to match the data from the family size table.")
 
-
-
+#Question for Part 5 of exercise 2
 st.write("Did larger families in lower classes tend to pay less per person compared to smaller families or higher classes?")
 
 '''
 # Titanic Visualization 2
 '''
-)
+
 # Generate and display the figure
 def visualize_families(results: pd.DataFrame):
     """
